@@ -5,7 +5,11 @@
 :root {
   scroll-behavior: inherit;
   --inter: "Inter", sans-serif;
-  --rb-para-1-color: #838A95;
+  --rb-body-color-1: #838A95;
+  --rb-black-color-1: #00234B;
+  --rb-pr-color-1: #5163FF;
+  --rb-gd-1: linear-gradient(90deg, #5163FF 12.38%, #C872F2 35.8%, #FE71B9 55.75%);
+  --rb-gd-2: linear-gradient(180deg, #708BFD 0%, #FE71B9 100%);
   --cube-1: cubic-bezier(.25,.46,.45,.50);
   --cube-2: cubic-bezier(0.31, -0.105, 0.43, 1.4);
 }
@@ -21,8 +25,9 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  color: var(--rb-para-1-color);
+  color: var(--rb-body-color-1);
   overflow-x: hidden;
+  margin: 0;
 }
 
 .img, img {
@@ -58,26 +63,32 @@ a:hover {
 
 h1 {
   font-size: 55px;
+  margin: 0;
 }
 
 h2 {
   font-size: 55px;
+  margin: 0;
 }
 
 h3 {
   font-size: 42px;
+  margin: 0;
 }
 
 h4 {
   font-size: 27px;
+  margin: 0;
 }
 
 h5 {
   font-size: 20px;
+  margin: 0;
 }
 
 h6 {
   font-size: 16px;
+  margin: 0;
 }
 
 ul {
@@ -148,8 +159,250 @@ input::placeholder, textarea::placeholder {
   background-repeat: no-repeat;
 }
 
+.rb-container-1 {
+  max-width: 1386px;
+  margin: 0 auto;
+}
+
 /*
 --- Global CSS End ---
+*/
+/*
+-- Paragraph Start --
+*/
+.rb-para-1 {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(131, 138, 149, 0.9);
+  margin-bottom: 0;
+}
+
+/*
+-- Paragraph End --
+*/
+/*
+-- Button Start --
+*/
+.rb-btn-1 {
+  display: inline-block;
+  padding: 16px 40px;
+  background: radial-gradient(64.58% 59% at 37.13% 12%, rgba(255, 255, 255, 0.427) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%), #4C5DEF;
+  box-shadow: 0px 10px 40.6px rgba(81, 99, 255, 0.33), inset -3px -4px 7px rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+.rb-btn-1 .btn-text {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  text-shadow: 1px 2px 1px rgba(12, 4, 66, 0.3);
+}
+
+/*
+-- Button End --
+*/
+/*
+-- Hero-1 Start --
+*/
+.rb-hero-1-main-wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  padding: 231px 0 157px 0;
+  overflow: hidden;
+}
+.rb-hero-1-shape-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rb-hero-1-shape-bottom {
+  position: absolute;
+  bottom: -241px;
+  left: 0;
+}
+.rb-hero-1-wrap {
+  position: relative;
+}
+.rb-hero-1-shape-1 {
+  position: absolute;
+  left: -105px;
+  top: 96px;
+}
+.rb-hero-1-content {
+  max-width: 1007px;
+}
+.rb-hero-1-content .title-wrap {
+  position: relative;
+}
+.rb-hero-1-content .title-wrap .title-shape {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+.rb-hero-1-content .disc {
+  max-width: 574px;
+}
+.rb-hero-1-title {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: var(--rb-black-color-1);
+  margin: 0 0 26px 0;
+}
+.rb-hero-1-title .text-gd-1 {
+  background: var(--rb-gd-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.rb-hero-1-title .icon {
+  display: inline-flex;
+  transform: translateY(22px);
+}
+.rb-hero-1-action {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px 30px;
+  flex-wrap: wrap;
+}
+.rb-hero-1-call {
+  display: grid;
+  grid-template-columns: 50px auto;
+  gap: 10px;
+  align-items: center;
+}
+.rb-hero-1-call .icon {
+  width: 50px;
+  height: 50px;
+  opacity: 0.1;
+  border: 2px solid var(--rb-black-color-1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rb-hero-1-call .icon svg path {
+  fill: var(--rb-pr-color-1);
+}
+.rb-hero-1-call .call-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rb-hero-1-call .call-cont .call-title {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  color: #838A95;
+}
+.rb-hero-1-call .call-cont .call-link {
+  font-family: var(--inter);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 100%;
+  color: var(--rb-black-color-1);
+}
+.rb-hero-1-customer {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.rb-hero-1-customer .customer-img {
+  display: flex;
+  align-items: center;
+}
+.rb-hero-1-customer .customer-cont {
+  max-width: 198px;
+}
+.rb-hero-1-customer .customer-cont .number {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--rb-pr-color-1);
+}
+.rb-hero-1-customer .customer-cont .customer-disc {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--rb-body-color-1);
+}
+.rb-hero-1-banner-wrap {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  display: flex;
+  justify-content: center;
+}
+.rb-hero-1-banner-wrap .popup-video {
+  width: 151px;
+  height: 151px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -68px;
+  transform: translateX(59px);
+  background: #FFFFFF;
+}
+.rb-hero-1-banner-wrap .popup-video .icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--rb-gd-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+}
+.rb-hero-1-marquee {
+  background: var(--rb-gd-2);
+  padding: 19px 0;
+  overflow: hidden;
+}
+.rb-hero-1-marquee-wrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.rb-hero-1-marquee-wrap .icon {
+  flex: 0 0 auto;
+}
+.rb-hero-1-marquee-text {
+  font-family: var(--inter);
+  font-weight: 700;
+  font-size: 61.6px;
+  line-height: 100%;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1.5px;
+  stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.8);
+  stroke: rgba(255, 255, 255, 0.8);
+  color: transparent;
+  flex: 0 0 auto;
+}
+
+/*
+-- Hero-1 End --
 */
 
 /*# sourceMappingURL=main.css.map */
