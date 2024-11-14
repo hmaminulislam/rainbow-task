@@ -8,9 +8,77 @@
     font-size: 18px;
     line-height: 32px;
     color: rgba(131, 138, 149, 0.9);
-    margin-bottom: 0;
 }
 
 /*
 -- Paragraph End --
+*/
+
+
+
+
+/*
+-- Subtitle Start --
+*/
+
+.rb-subtitle-1 {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 16.5px;
+    gap: 6px;
+    background: linear-gradient(90deg, #708BFD 0%, #FE71B9 100%);
+    box-shadow: inset 0px -4px 18.5px rgba(255, 255, 255, 0.79);
+    border-radius: 48px;
+    margin-bottom: 20px;
+
+    .text {
+        font-family: var(--inter);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+    }
+}
+
+/*
+-- Subtitle End --
+*/
+
+
+
+
+/*
+-- Section Title Start --
+*/
+
+.rb-section-title-1 {
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+    color: var(--rb-black-color-1);
+    margin-bottom: 0;
+
+    @media #{$xl} {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    @media #{$lg, $md} {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @media #{$sm} {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    @media #{$xs} {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+
+/*
+-- Section Title End --
 */

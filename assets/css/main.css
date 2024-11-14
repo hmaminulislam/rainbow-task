@@ -97,6 +97,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+}
+
 ::-moz-selection {
   background-color: #3065D0;
   color: white;
@@ -162,6 +166,7 @@ input::placeholder, textarea::placeholder {
 .rb-container-1 {
   max-width: 1386px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
 /*
@@ -176,11 +181,75 @@ input::placeholder, textarea::placeholder {
   font-size: 18px;
   line-height: 32px;
   color: rgba(131, 138, 149, 0.9);
-  margin-bottom: 0;
 }
 
 /*
 -- Paragraph End --
+*/
+/*
+-- Subtitle Start --
+*/
+.rb-subtitle-1 {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 16.5px;
+  gap: 6px;
+  background: linear-gradient(90deg, #708BFD 0%, #FE71B9 100%);
+  box-shadow: inset 0px -4px 18.5px rgba(255, 255, 255, 0.79);
+  border-radius: 48px;
+  margin-bottom: 20px;
+}
+.rb-subtitle-1 .text {
+  font-family: var(--inter);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+
+/*
+-- Subtitle End --
+*/
+/*
+-- Section Title Start --
+*/
+.rb-section-title-1 {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.01em;
+  color: var(--rb-black-color-1);
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .rb-section-title-1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb-section-title-1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .rb-section-title-1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 575px) {
+  .rb-section-title-1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+
+/*
+-- Section Title End --
 */
 /*
 -- Button Start --
@@ -202,6 +271,22 @@ input::placeholder, textarea::placeholder {
   text-shadow: 1px 2px 1px rgba(12, 4, 66, 0.3);
 }
 
+.rb-btn-outline-1 {
+  display: inline-block;
+  padding: 16px 28px;
+  background: radial-gradient(64.58% 59% at 37.13% 12%, rgba(255, 255, 255, 0.427) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 10px;
+}
+.rb-btn-outline-1 .btn-text {
+  font-family: var(--inter);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: var(--rb-body-color-1);
+}
+
 /*
 -- Button End --
 */
@@ -214,6 +299,11 @@ input::placeholder, textarea::placeholder {
   position: relative;
   padding: 231px 0 157px 0;
   overflow: hidden;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-hero-1-main-wrap {
+    padding: 140px 0 0 0;
+  }
 }
 .rb-hero-1-shape-top {
   position: absolute;
@@ -235,6 +325,13 @@ input::placeholder, textarea::placeholder {
 }
 .rb-hero-1-content {
   max-width: 1007px;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb-hero-1-content {
+    max-width: 710px;
+  }
 }
 .rb-hero-1-content .title-wrap {
   position: relative;
@@ -243,6 +340,16 @@ input::placeholder, textarea::placeholder {
   position: absolute;
   right: 0;
   top: -20px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .rb-hero-1-content .title-wrap .title-shape {
+    top: -40px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-hero-1-content .title-wrap .title-shape {
+    display: none;
+  }
 }
 .rb-hero-1-content .disc {
   max-width: 574px;
@@ -256,6 +363,48 @@ input::placeholder, textarea::placeholder {
   color: var(--rb-black-color-1);
   margin: 0 0 26px 0;
 }
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .rb-hero-1-title {
+    font-size: 90px;
+    line-height: 1.1;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .rb-hero-1-title {
+    font-size: 80px;
+    line-height: 1.1;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .rb-hero-1-title {
+    font-size: 60px;
+    line-height: 1.1;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .rb-hero-1-title {
+    font-size: 55px;
+    line-height: 1.1;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb-hero-1-title {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .rb-hero-1-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+@media (max-width: 575px) {
+  .rb-hero-1-title {
+    font-size: 35px;
+    line-height: 1.1;
+  }
+}
 .rb-hero-1-title .text-gd-1 {
   background: var(--rb-gd-1);
   -webkit-background-clip: text;
@@ -266,6 +415,40 @@ input::placeholder, textarea::placeholder {
 .rb-hero-1-title .icon {
   display: inline-flex;
   transform: translateY(22px);
+}
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .rb-hero-1-title .icon {
+    max-width: 80px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .rb-hero-1-title .icon {
+    max-width: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .rb-hero-1-title .icon {
+    transform: translateY(15px);
+    max-width: 55px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb-hero-1-title .icon {
+    transform: translateY(8px);
+    max-width: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .rb-hero-1-title .icon {
+    transform: translateY(7px);
+    max-width: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .rb-hero-1-title .icon {
+    transform: translateY(6px);
+    max-width: 30px;
+  }
 }
 .rb-hero-1-action {
   margin-top: 50px;
@@ -349,6 +532,33 @@ input::placeholder, textarea::placeholder {
   display: flex;
   justify-content: center;
 }
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .rb-hero-1-banner-wrap {
+    right: -70px;
+    bottom: -110px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .rb-hero-1-banner-wrap {
+    right: -180px;
+    bottom: -110px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-hero-1-banner-wrap {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    max-width: 1092px;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-hero-1-banner-wrap {
+    margin-top: 100px;
+  }
+}
 .rb-hero-1-banner-wrap .popup-video {
   width: 151px;
   height: 151px;
@@ -362,6 +572,46 @@ input::placeholder, textarea::placeholder {
   transform: translateX(59px);
   background: #FFFFFF;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb-hero-1-banner-wrap .popup-video {
+    width: 120px;
+    height: 120px;
+    top: -48px;
+    transform: translateX(56px);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .rb-hero-1-banner-wrap .popup-video {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    transform: translateX(30px);
+  }
+}
+@media (max-width: 575px) {
+  .rb-hero-1-banner-wrap .popup-video {
+    width: 100px;
+    height: 100px;
+    top: -70px;
+    transform: translateX(15px);
+  }
+}
+.rb-hero-1-banner-wrap .popup-video .circle-text svg {
+  width: 176px;
+  height: 176px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-hero-1-banner-wrap .popup-video .circle-text svg {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-hero-1-banner-wrap .popup-video .circle-text svg {
+    width: 120px;
+    height: 120px;
+  }
+}
 .rb-hero-1-banner-wrap .popup-video .icon {
   position: absolute;
   width: 60px;
@@ -374,10 +624,45 @@ input::placeholder, textarea::placeholder {
   color: #fff;
   font-size: 14px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-hero-1-banner-wrap .popup-video .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 12;
+  }
+}
 .rb-hero-1-marquee {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 21px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb-hero-1-marquee {
+    margin-top: -65px;
+  }
+}
+.rb-hero-1-marquee .rb-marquee-1 {
   background: var(--rb-gd-2);
   padding: 19px 0;
+  position: relative;
+  z-index: 2;
   overflow: hidden;
+}
+.rb-hero-1-mar-shape-1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: start;
+}
+.rb-hero-1-mar-shape-2 {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: end;
 }
 .rb-hero-1-marquee-wrap {
   display: flex;
@@ -400,9 +685,328 @@ input::placeholder, textarea::placeholder {
   color: transparent;
   flex: 0 0 auto;
 }
+@media (max-width: 575px) {
+  .rb-hero-1-marquee-text {
+    font-size: 40px;
+  }
+}
 
 /*
 -- Hero-1 End --
+*/
+/*
+-- About-1 Start --
+*/
+.rb-about-1-main-wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding: 120px 0 100px 0;
+}
+.rb-about-1-shape {
+  position: absolute;
+  right: 0;
+  top: 192px;
+}
+.rb-about-1-wrap {
+  display: grid;
+  grid-template-columns: 1.01955fr 1fr;
+  gap: 50px 78px;
+  align-items: center;
+  max-width: 1217px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-about-1-wrap {
+    grid-template-columns: 1fr;
+    max-width: 575px;
+    margin: 0 auto;
+  }
+}
+.rb-about-1-left {
+  position: relative;
+  display: flex;
+}
+@media (max-width: 575px) {
+  .rb-about-1-left {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.rb-about-1-left .img-1 img {
+  border-radius: 10px;
+}
+.rb-about-1-left .img-2 {
+  margin-left: -51px;
+  margin-bottom: -60px;
+  align-self: flex-end;
+  border: 6px solid #ffffff;
+  border-radius: 10px;
+}
+@media (max-width: 575px) {
+  .rb-about-1-left .img-2 {
+    margin-left: 0;
+    margin-bottom: 0;
+    border: 0;
+  }
+}
+.rb-about-1-left .img-2 img {
+  border-radius: 10px;
+}
+.rb-about-1-left .circle-img {
+  position: absolute;
+  right: 18px;
+  top: 0;
+}
+@media (max-width: 575px) {
+  .rb-about-1-left .circle-img {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  .rb-about-1-left .circle-img img {
+    max-width: 150px;
+  }
+}
+.rb-about-1-right .disc {
+  margin-top: 16px;
+}
+.rb-about-1-list {
+  margin-top: 30px;
+}
+.rb-about-1-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.rb-about-1-list ul li {
+  position: relative;
+  padding-left: 43px;
+  display: flex;
+  align-items: baseline;
+}
+.rb-about-1-list ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background: url("../img/about/a1-list-icon.svg");
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15.7px rgba(12, 4, 66, 0.07);
+  transform: translateY(2.5px);
+}
+.rb-about-1-action {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px 30px;
+}
+.rb-about-1-ceo {
+  display: grid;
+  grid-template-columns: 62px auto;
+  gap: 12px 20px;
+  align-items: center;
+}
+.rb-about-1-ceo .ceo-img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(15, 54, 248, 0.47) 0%, rgba(9, 32, 146, 0.47) 100%);
+  filter: drop-shadow(0px 8px 18.1px rgba(7, 15, 85, 0.18));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rb-about-1-ceo .ceo-img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.rb-about-1-ceo .name {
+  font-family: "Autography";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--rb-black-color-1);
+  position: relative;
+}
+.rb-about-1-ceo .name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  opacity: 0.15;
+  background-color: var(--rb-black-color-1);
+}
+.rb-about-1-ceo .role {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: var(--rb-body-color-1);
+}
+.rb-about-1-counter-wrap {
+  margin-top: 160px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px 91px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb-about-1-counter-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    margin: 160px auto 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .rb-about-1-counter-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .rb-about-1-counter-wrap {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 100px;
+  }
+}
+.rb-about-1-counter-item {
+  position: relative;
+  padding-top: 20px;
+}
+.rb-about-1-counter-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: #00234B;
+  opacity: 0.15;
+  transition: all 0.5s ease;
+}
+.rb-about-1-counter-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--rb-pr-color-1);
+  transition: all 0.5s ease;
+  transition-delay: 0.1s;
+}
+.rb-about-1-counter-item .number {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  color: var(--rb-black-color-1);
+}
+@media (max-width: 575px) {
+  .rb-about-1-counter-item .number {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+.rb-about-1-counter-item .number .parcent, .rb-about-1-counter-item .number .plus {
+  font-size: 50px;
+}
+.rb-about-1-counter-item .counter-title {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--rb-body-color-1);
+  margin-top: 11px;
+}
+.rb-about-1-counter-item:hover::after {
+  width: 0%;
+}
+.rb-about-1-counter-item:hover::before {
+  width: 100%;
+}
+
+/*
+-- About-1 End --
+*/
+/*
+-- Services-1 Start --
+*/
+.rb-services-1-area {
+  padding: 100px 0 120px 0;
+}
+.rb-services-1-title-wrap {
+  max-width: 481px;
+  margin: 0 auto;
+  text-align: center;
+}
+.rb-services-1-wrap {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.rb-services-1-card {
+  padding: 50px;
+  background: #FFFFFF;
+  border: 1.5px solid #FFFFFF;
+  box-shadow: inset 0px -23px 25.3px #F6F7FF, inset 0px 33px 101.1px #EEEFFF;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 414px auto;
+  gap: 59px;
+  align-items: center;
+}
+.rb-services-1-btn-wrap {
+  margin-top: 60px;
+  text-align: center;
+}
+.rb-services-1-card-content {
+  max-width: 605px;
+}
+.rb-services-1-card-content .subtitle {
+  display: inline-flex;
+  position: relative;
+  padding: 0 14.5px;
+  margin-bottom: 9px;
+}
+.rb-services-1-card-content .subtitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #EEEFFF;
+  border-radius: 100px;
+}
+.rb-services-1-card-content .subtitle span {
+  position: relative;
+  z-index: 2;
+  font-family: var(--inter);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  background: linear-gradient(102.44deg, #5163FF -0.32%, #FE71B9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.rb-services-1-card-content .disc {
+  margin-top: 10px;
+}
+
+/*
+-- Services-1 End --
 */
 
 /*# sourceMappingURL=main.css.map */

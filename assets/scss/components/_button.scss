@@ -20,6 +20,25 @@
     }
 }
 
+
+.rb-btn-outline-1 {
+    display: inline-block;
+    padding: 16px 28px;
+    background: radial-gradient(64.58% 59% at 37.13% 12%, rgba(255, 255, 255, 0.427) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 10px;
+
+
+    .btn-text {
+        font-family: var(--inter);
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: var(--rb-body-color-1);
+    }
+}
+
 /*
 -- Button End --
 */

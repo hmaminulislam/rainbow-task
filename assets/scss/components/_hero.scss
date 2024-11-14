@@ -9,6 +9,10 @@
         position: relative;
         padding: 231px 0 157px 0;
         overflow: hidden;
+
+        @media #{$xl, $lg, $md, $sm, $xs} {
+            padding: 140px 0 0 0;
+        }
     }
 
     &-shape-top {
@@ -35,6 +39,12 @@
 
     &-content {
         max-width: 1007px;
+        position: relative;
+        z-index: 2;
+
+        @media #{$xl, $lg, $md} {
+            max-width: 710px;
+        }
 
         .title-wrap {
             position: relative;
@@ -43,6 +53,13 @@
                 position: absolute;
                 right: 0;
                 top: -20px;
+
+                @media #{$xl} {
+                    top: -40px;
+                }
+                @media #{$lg, $md, $sm, $xs} {
+                    display: none;
+                }
             }
         }
 
@@ -59,6 +76,35 @@
         color: var(--rb-black-color-1);
         margin: 0 0 26px 0;
 
+        @media #{$xxxl} {
+            font-size: 90px;
+            line-height: 1.1;
+        }
+        @media #{$xxl} {
+            font-size: 80px;
+            line-height: 1.1;
+        }
+        @media #{$xl} {
+            font-size: 60px;
+            line-height: 1.1;
+        }
+        @media #{$lg} {
+            font-size: 55px;
+            line-height: 1.1;
+        }
+        @media #{$md} {
+            font-size: 50px;
+            line-height: 1.1;
+        }
+        @media #{$sm} {
+            font-size: 40px;
+            line-height: 1.1;
+        }
+        @media #{$xs} {
+            font-size: 35px;
+            line-height: 1.1;
+        }
+
         .text-gd-1 {
             background: var(--rb-gd-1);
             -webkit-background-clip: text;
@@ -70,6 +116,29 @@
         .icon {
             display: inline-flex;
             transform: translateY(22px);
+
+            @media #{$xxxl} {
+                max-width: 80px;
+            }
+            @media #{$xxl} {
+                max-width: 70px;
+            }
+            @media #{$xl, $lg} {
+                transform: translateY(15px);
+                max-width: 55px;
+            }
+            @media #{$md} {
+                transform: translateY(8px);
+                max-width: 40px;
+            }
+            @media #{$sm} {
+                transform: translateY(7px);
+                max-width: 35px;
+            }
+            @media #{$xs} {
+                transform: translateY(6px);
+                max-width: 30px;
+            }
         }
     }
     &-action {
@@ -169,6 +238,28 @@
         display: flex;
         justify-content: center;
 
+        @media #{$xxxl} {
+            right: -70px;
+            bottom: -110px;        
+        }
+        @media #{$xxl} {
+            right: -180px;
+            bottom: -110px;        
+        }
+        @media #{$xl, $lg, $md, $sm, $xs} {
+            position: relative;
+            right: auto;
+            bottom: auto;
+            max-width: 1092px;
+            margin-left: auto;
+            margin-top: 60px;
+        }
+
+        @media #{$sm, $xs} {
+            margin-top: 100px;
+        }
+
+
         .popup-video {
             width: 151px;
             height: 151px;
@@ -181,7 +272,43 @@
             top: -68px;
             transform: translateX(59px);
             background: #FFFFFF;
+
+            @media #{$lg, $md} {
+                width: 120px;
+                height: 120px;
+                top: -48px;
+                transform: translateX(56px);
+            }
+
+            @media #{$sm} {
+                width: 100px;
+                height: 100px;
+                top: -50px;
+                transform: translateX(30px);
+            }
+
+            @media #{$xs} {
+                width: 100px;
+                height: 100px;
+                top: -70px;
+                transform: translateX(15px);
+            }
             
+            .circle-text {
+                svg {
+                    width: 176px;
+                    height: 176px;
+
+                    @media #{$lg, $md, $sm, $xs} {
+                        width: 140px;
+                        height: 140px;
+                    }
+                    @media #{$sm, $xs} {
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+            }
 
             .icon {
                 position: absolute;
@@ -194,15 +321,48 @@
                 border-radius: 50%;
                 color: #fff;
                 font-size: 14px;
+
+                @media #{$lg, $md, $sm, $xs} {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 12;
+                }
             }
         }
     }
 
     &-marquee {
-        // height: 100px;
-        background: var(--rb-gd-2);
-        padding: 19px 0;
         overflow: hidden;
+        position: relative;
+        padding-bottom: 21px;
+        
+        @media #{$xl, $lg, $md} {
+            margin-top: -65px;
+        }
+
+        .rb-marquee-1 {
+            background: var(--rb-gd-2);
+            padding: 19px 0;
+            position: relative;
+            z-index: 2;
+            overflow: hidden;
+        }
+    }
+    &-mar-shape-1 {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: start;
+    }
+    &-mar-shape-2 {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: end;
     }
     &-marquee-wrap {
         display: flex;
@@ -225,6 +385,10 @@
         stroke: rgba(255, 255, 255, 0.8);
         color: transparent;
         flex: 0 0 auto;
+
+        @media #{$xs} {
+            font-size: 40px;
+        }
     }
 }
 
