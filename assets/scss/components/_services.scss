@@ -28,8 +28,18 @@
         border-radius: 10px;
         display: grid;
         grid-template-columns: 414px auto;
-        gap: 59px;
+        gap: 30px 59px;
         align-items: center;
+
+        @media #{$md, $sm, $xs} {
+            grid-template-columns: 1fr;
+        }
+        @media #{$sm} {
+            padding: 40px;
+        }
+        @media #{$xs} {
+            padding: 20px;
+        }
     }
 
     &-btn-wrap {
@@ -39,6 +49,18 @@
 
     &-card-content {
         max-width: 605px;
+
+        .card-title {
+            @media #{$sm} {
+                font-size: 34px;
+                line-height: 42px;
+            }
+
+            @media #{$xs} {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
 
         .subtitle {
             display: inline-flex;
