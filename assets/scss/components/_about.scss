@@ -41,7 +41,23 @@
             gap: 30px;
         }
 
+        &:is(.active) {
+            .img-2 {
+                &::after {
+                    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+                }
+            }
+
+            .img-1 {
+                transform: translate(0px);
+            }
+        }
+
         .img-1 {
+            transform: translateY(120px);
+            transition: all 2.2s ease;
+            transition-delay: 0.2s;
+
             img {
                 border-radius: 10px;
             }
@@ -52,11 +68,26 @@
             align-self: flex-end;
             border: 6px solid #ffffff;
             border-radius: 10px;
+            position: relative;
 
             @media #{$xs} {
                 margin-left: 0;
                 margin-bottom: 0;
                 border: 0;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-color: var(--rb-pr-color-1);
+                transition: all 0.8s ease;
+                transition-delay: 0.3s;
+                border-radius: 10px;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             }
             
             img {
@@ -68,6 +99,7 @@
             position: absolute;
             right: 18px;
             top: 0;
+            animation: roateding 30s linear infinite;
 
             @media #{$xs} {
                 position: static;
@@ -252,7 +284,7 @@
             margin-top: 11px;
         }
 
-        &:hover {
+        &:is(.active) {
             &::after {
                 width: 0%;
             }

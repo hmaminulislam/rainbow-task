@@ -241,6 +241,12 @@
         bottom: -60px;
         display: flex;
         justify-content: center;
+        transform: translateX(300px);
+        transition: all 2.4s ease;
+
+        &:is(.active) {
+            transform: translate(0px);
+        }
 
         @media #{$xxxl} {
             right: -70px;
@@ -397,9 +403,14 @@
         stroke: rgba(255, 255, 255, 0.8);
         color: transparent;
         flex: 0 0 auto;
+        transition: all 0.8s ease;
 
         @media #{$xs} {
             font-size: 40px;
+        }
+
+        &:hover {
+            color: var(--rb-pr-color-1);
         }
     }
 }

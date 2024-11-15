@@ -2,6 +2,59 @@
 
 	"use strict";
 
+
+	window.addEventListener('load', function(){
+
+		// hero-1 animation 
+		const ct_hero_1_anim_1 = gsap.timeline(
+			{
+				scrollTrigger: {
+					trigger: ".rb-hero-1-banner-wrap",
+					scrub: 1,
+					start: "top 200%",
+					end: "bottom bottom",
+					toggleClass: "active",
+					toggleActions: "play none none reverse",
+					once: true,
+				}
+			}
+		);
+
+
+	})
+
+
+
+	// active class added 
+	const boxWrap = gsap.utils.toArray('.rb-class-add');
+	boxWrap.forEach(item => {
+		gsap.to(item, {
+			scrollTrigger: {
+				trigger: item,
+				scrub: 1,
+				start: "top 80%",
+				end: "bottom bottom",
+				toggleClass: "active",
+				toggleActions: "play none none reverse",
+				once: true,
+			}
+		});
+	});
+
+
+
+
+	// experience card hover active toggle 
+	let exper1_active_item = $(".rb-about-1-counter-item");
+  
+    exper1_active_item.mouseover(function () {
+		exper1_active_item.removeClass("active");
+      	$(this).addClass("active");
+    });
+
+
+
+
 	// gsap scroll-trigger register 
 	gsap.registerPlugin(ScrollTrigger) 
 
@@ -28,8 +81,6 @@
 
 	// services-1 card sticky animatin start 
 
-
-	/* Service 3 */
 
 
 

@@ -300,6 +300,27 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    transition: all 0.4s ease;
+                    position: relative;
+                    overflow: hidden;
+                    
+                    .icon-1 {
+                        position: absolute;
+                        transition: all 0.5s ease;
+                        transform: translate(-45px, 45px);
+                    }
+                    .icon-2 {
+                        transition: all 0.5s ease;
+                    }
+                    
+                    &:hover {
+                        .icon-1 {
+                            transform: translate(0px);
+                        }
+                        .icon-2 {
+                            transform: translate(45px, -45px);
+                        }
+                    }
                 }
             }
         }
