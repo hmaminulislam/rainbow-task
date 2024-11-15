@@ -105,6 +105,13 @@
                 top: 49%;
               }
 
+              .current {
+                transition: color 0.3s ease;
+                &:hover {
+                  color: var(--rb-pr-color-1);
+                }
+              }
+
               .list {
                 margin-top: 15px;
 
@@ -193,6 +200,20 @@
       background-color: rgba(0, 35, 75, 0.15);
       right: -15.5px;
     }
+
+    svg {
+      path {
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--rb-pr-color-1);
+        }
+      }
+    }
   }
 
   &-search-btn {
@@ -209,6 +230,20 @@
       height: 20px;
       background-color: rgba(0, 35, 75, 0.15);
       left: -15.5px;
+    }
+
+    svg {
+      path {
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--rb-pr-color-1);
+        }
+      }
     }
   }
 
@@ -239,6 +274,20 @@
       letter-spacing: -0.04em;
       right: 0px;
       top: -10px;
+    }
+
+    svg {
+      path {
+        transition: all 0.3s ease;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--rb-pr-color-1);
+        }
+      }
     }
   }
 

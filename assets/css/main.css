@@ -279,6 +279,13 @@ input::placeholder, textarea::placeholder {
   background: radial-gradient(64.58% 59% at 37.13% 12%, rgba(255, 255, 255, 0.427) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%), #4C5DEF;
   box-shadow: 0px 10px 40.6px rgba(81, 99, 255, 0.33), inset -3px -4px 7px rgba(255, 255, 255, 0.15);
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.rb-btn-1::after {
+  content: "";
+  position: absolute;
+  left: 0;
 }
 .rb-btn-1 .btn-text {
   font-family: var(--inter);
@@ -288,6 +295,8 @@ input::placeholder, textarea::placeholder {
   letter-spacing: -0.01em;
   color: #FFFFFF;
   text-shadow: 1px 2px 1px rgba(12, 4, 66, 0.3);
+  position: relative;
+  z-index: 2;
 }
 
 .rb-btn-outline-1 {
@@ -405,6 +414,12 @@ input::placeholder, textarea::placeholder {
   border-color: var(--rb-body-color-1);
   top: 49%;
 }
+.rb-header-1-area .topbar-wrap .topbar-right .language-swtch .nice-select .current {
+  transition: color 0.3s ease;
+}
+.rb-header-1-area .topbar-wrap .topbar-right .language-swtch .nice-select .current:hover {
+  color: var(--rb-pr-color-1);
+}
 .rb-header-1-area .topbar-wrap .topbar-right .language-swtch .nice-select .list {
   margin-top: 15px;
 }
@@ -482,6 +497,12 @@ input::placeholder, textarea::placeholder {
   background-color: rgba(0, 35, 75, 0.15);
   right: -15.5px;
 }
+.rb-header-1-side-btn svg path {
+  transition: all 0.3s ease;
+}
+.rb-header-1-side-btn:hover svg path {
+  fill: var(--rb-pr-color-1);
+}
 .rb-header-1-search-btn {
   background-color: transparent;
   border: 0;
@@ -496,6 +517,12 @@ input::placeholder, textarea::placeholder {
   height: 20px;
   background-color: rgba(0, 35, 75, 0.15);
   left: -15.5px;
+}
+.rb-header-1-search-btn svg path {
+  transition: all 0.3s ease;
+}
+.rb-header-1-search-btn:hover svg path {
+  fill: var(--rb-pr-color-1);
 }
 .rb-header-1-cart-btn {
   width: 31px;
@@ -523,6 +550,12 @@ input::placeholder, textarea::placeholder {
   letter-spacing: -0.04em;
   right: 0px;
   top: -10px;
+}
+.rb-header-1-cart-btn svg path {
+  transition: all 0.3s ease;
+}
+.rb-header-1-cart-btn:hover svg path {
+  fill: var(--rb-pr-color-1);
 }
 .rb-header-1-btn {
   padding: 7px 20px;
@@ -924,8 +957,8 @@ input::placeholder, textarea::placeholder {
   align-items: center;
   justify-content: center;
 }
-.rb-hero-1-call .icon svg path {
-  fill: var(--rb-pr-color-1);
+.rb-hero-1-call .icon:hover img {
+  animation: zigzag 0.6s ease;
 }
 .rb-hero-1-call .call-cont {
   display: flex;
@@ -945,6 +978,10 @@ input::placeholder, textarea::placeholder {
   font-size: 17px;
   line-height: 100%;
   color: var(--rb-black-color-1);
+  transition: all 0.3s ease;
+}
+.rb-hero-1-call .call-cont .call-link:hover {
+  color: var(--rb-pr-color-1);
 }
 .rb-hero-1-customer {
   margin-top: 60px;
@@ -1047,6 +1084,9 @@ input::placeholder, textarea::placeholder {
     transform: translateX(15px);
   }
 }
+.rb-hero-1-banner-wrap .popup-video .circle-text {
+  animation: roateding 30s linear infinite;
+}
 .rb-hero-1-banner-wrap .popup-video .circle-text svg {
   width: 176px;
   height: 176px;
@@ -1074,6 +1114,7 @@ input::placeholder, textarea::placeholder {
   border-radius: 50%;
   color: #fff;
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .rb-hero-1-banner-wrap .popup-video .icon {
@@ -1081,6 +1122,9 @@ input::placeholder, textarea::placeholder {
     height: 40px;
     font-size: 12;
   }
+}
+.rb-hero-1-banner-wrap .popup-video:hover .icon {
+  color: var(--rb-pr-color-1);
 }
 .rb-hero-1-marquee {
   overflow: hidden;
@@ -1393,6 +1437,7 @@ input::placeholder, textarea::placeholder {
 */
 .rb-services-1-area {
   padding: 100px 0 120px 0;
+  position: relative;
 }
 .rb-services-1-title-wrap {
   max-width: 481px;
@@ -1415,6 +1460,23 @@ input::placeholder, textarea::placeholder {
   grid-template-columns: 414px auto;
   gap: 30px 59px;
   align-items: center;
+  position: sticky;
+  top: 100px;
+  transition: all 2s ease;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .rb-services-1-card {
+    position: static;
+  }
+}
+.rb-services-1-card:nth-child(2) {
+  top: 174px;
+}
+.rb-services-1-card:nth-child(3) {
+  top: 258px;
+}
+.rb-services-1-card:nth-child(4) {
+  top: 340px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .rb-services-1-card {
@@ -2511,6 +2573,40 @@ input::placeholder, textarea::placeholder {
 
 /*
 -- Footer-1 End --
+*/
+/*
+-- Animation Keyframe Start --
+*/
+@keyframes zigzag {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+}
+@keyframes roateding {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*
+-- Animation Keyframe End --
 */
 
 /*# sourceMappingURL=main.css.map */

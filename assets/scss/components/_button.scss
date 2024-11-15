@@ -8,6 +8,14 @@
     background: radial-gradient(64.58% 59% at 37.13% 12%, rgba(255, 255, 255, 0.427) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #4C5DEF;
     box-shadow: 0px 10px 40.6px rgba(81, 99, 255, 0.33), inset -3px -4px 7px rgba(255, 255, 255, 0.15);
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
 
     .btn-text {
         font-family: var(--inter);
@@ -17,6 +25,8 @@
         letter-spacing: -0.01em;
         color: #FFFFFF;
         text-shadow: 1px 2px 1px rgba(12, 4, 66, 0.3);
+        position: relative;
+        z-index: 2;
     }
 }
 

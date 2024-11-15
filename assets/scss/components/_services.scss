@@ -5,6 +5,7 @@
 .rb-services-1 {
     &-area {
         padding: 100px 0 120px 0;
+        position: relative;
     }
 
     &-title-wrap {
@@ -30,6 +31,23 @@
         grid-template-columns: 414px auto;
         gap: 30px 59px;
         align-items: center;
+        position: sticky;
+        top: 100px;
+        transition: all 2s ease;
+
+        @media #{$lg, $md, $sm, $xs} {
+            position: static;
+        }
+
+        &:nth-child(2) {
+            top: 174px;
+        }
+        &:nth-child(3) {
+            top: 258px;
+        }
+        &:nth-child(4) {
+            top: 340px;
+        }
 
         @media #{$md, $sm, $xs} {
             grid-template-columns: 1fr;

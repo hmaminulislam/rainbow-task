@@ -2,6 +2,36 @@
 
 	"use strict";
 
+	// gsap scroll-trigger register 
+	gsap.registerPlugin(ScrollTrigger) 
+
+	// services-1 card sticky animatin start  
+	if(window.innerWidth> 1199){
+
+		let tl = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.rb-services-1-wrap',
+				pin: true,
+				start: 'top 0%',
+				end: 'top 40%',
+				scrub: 1,
+			}
+		});
+
+		tl
+		.to(".rb_ser1_card_1", {scale: 0.862, duration: 0.3, transformOrigin: "top"})
+		.to(".rb_ser1_card_2", {scale: 0.896, duration: 0.3, transformOrigin: "top",})
+		.to(".rb_ser1_card_3", {scale: 0.943, duration: 0.3, transformOrigin: "top"})
+		.to(".rb_ser1_card_4", {scale: 0.986, duration: 0.3, transformOrigin: "top"})
+
+	}
+
+	// services-1 card sticky animatin start 
+
+
+	/* Service 3 */
+
+
 
 	// work-1 slider start
 
@@ -49,13 +79,11 @@
 		}
 	});
 
-
 	// work-1 slider end
 
 
 
-
-	// work-1 slider start
+	// testimonial-1 slider start
 
 	let rbTestimonial1Slider = new Swiper('.rb-testimonial-1-slider', {
 		loop: true,
@@ -72,22 +100,17 @@
 		},
 	});
 
-
-	// work-1 slider end
-
-
+	// testimonial-1 slider end
 
 
 
 	// nice-select activation start
-	
+
 	$('.nice-select select').niceSelect();
 
 	// nice-select activation end
 	
 	
-
-
 
 	// background img activation start
 
@@ -96,6 +119,8 @@
 	})
 
 	// background img activation end
+
+
 
 	// popup start
 
@@ -106,6 +131,8 @@
 	// popup end
 
 
+
+
 	// counter start
 
 	$('.rb-counter-1').counterUp({
@@ -114,6 +141,8 @@
 	}); 
 
 	// counter end
+
+
 
 
 	// marquee start 
