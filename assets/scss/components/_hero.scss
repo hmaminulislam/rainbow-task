@@ -10,7 +10,7 @@
         padding: 231px 0 157px 0;
         overflow: hidden;
 
-        @media #{$xl, $lg, $md, $sm, $xs} {
+        @media #{$md, $sm, $xs} {
             padding: 140px 0 0 0;
         }
     }
@@ -341,7 +341,7 @@
         }
 
         .rb-marquee-1 {
-            background: var(--rb-gd-2);
+            background: var(--rb-gd-6);
             padding: 19px 0;
             position: relative;
             z-index: 2;

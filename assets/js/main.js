@@ -61,10 +61,10 @@
 		loop: true,
 		speed: 1000,
 		spaceBetween: 80,
-		// autoplay: {
-		// 	delay: 4000,
-		// 	disableOnInteraction: false
-		// },
+		autoplay: {
+			delay: 4000,
+			disableOnInteraction: false
+		},
 
 		navigation: {
 			nextEl: ".rb-testimonial-1-next",
@@ -75,6 +75,17 @@
 
 	// work-1 slider end
 
+
+
+
+
+	// nice-select activation start
+	
+	$('.nice-select select').niceSelect();
+
+	// nice-select activation end
+	
+	
 
 
 

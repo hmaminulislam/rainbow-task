@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/external-font.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
      
@@ -24,6 +25,7 @@
     <!-- Header Start -->
      <div class="rb-header-1-area">
         <div class="rb-container-1">
+
           <!-- top bar -->
           <div class="topbar-wrap">
             <div class="topbar-left">
@@ -31,24 +33,16 @@
               <span class="item"><img src="assets/img/header/h1-chat-icon.svg" alt=""> <a href="mailto:support@gamil.com">support@gamil.com</a></span>
             </div>
             <a href="#" class="header-logo">
-              <img src="assets/img/logo/logo-1.png" alt="">
+              <img src="assets/img/logo/logo-1.svg" alt="">
             </a>
             <div class="topbar-right">
               <div class="language-swtch">
-                <div>
-                  <span class="bt-language pull-right" data-role="0">
-                    <img src="assets/img/header/h1-earth.svg" alt="">
-                    English<i class="fa fa-angle-down"></i>
-                  </span>
-                </div>
-                <div id="list-language-box" class="animated slideInDown hidden" style="z-index: 999">
-                  <ul id="Language-list" class="Language-list">
-                      <li class="link">
-                          <a href="#" rel="alternate" hreflang="bn-BD">Bangla</a>
-                      </li>
-                      <li class="current">
-                          <a href="#" rel="alternate" hreflang="es-ES">Spanish</a>
-                      </li>
+                <div class="nice-select option-selector" tabindex="0">
+                  <span class="current">English</span>
+                  <ul class="list">
+                      <li class="option">English</li>
+                      <li class="option">Bangla</li>
+                      <li class="option">Spanish</li>
                   </ul>
                 </div>
               </div>
@@ -70,86 +64,105 @@
           </div>
 
           <div class="rb-header-1-wrap">
-              <div class="rb-header-1-row" >
 
-                  <!-- logo -->
-                  <a href="index.html" aria-label="name" class="rb-header-1-logo d-block">
-                      <img src="assets/img/logo/logo-1.svg" alt="">
-                  </a>
-                  
-                  <!-- menu -->
-                  <nav class="main-navigation d-none d-lg-block">
-                    <ul id="main-nav" class="nav navbar-nav clearfix">
-
-                      <li class="dropdown">
-                          <a href="!#">home</a>
-                          <ul class="dropdown-menu clearfix">
-                            <li>
-                              <a href="index.html">home one</a>
-                            </li>
-                            <li>
-                                <a href="index-2.html">home two</a>
-                            </li>
-                            <li>
-                                <a href="index-3.html">home three</a>
-                            </li>
-                            <li>
-                                <a href="index-4.html">home four</a>
-                            </li>
-                            <li>
-                                <a href="index-5.html">home five</a>
-                            </li>
-                          </ul>
-                      </li>
-                                                  
-                      <li>
-                          <a href="#">about</a>
-                      </li>
-
-                      <li>
-                          <a href="#">services</a>
-                      </li>
-
-                      <li>
-                          <a href="#">pages</a>
-                      </li>
-                      
-                      <li>
-                          <a href="#">news</a>
-                      </li>
-
-                      <li>
-                          <a href="#">contact</a>
-                      </li>
-
-
-                    </ul>
-                  </nav> 
-                  
-              </div>
-
-              <!-- actions -->
-              <div class="rb-header-1-action">
-                <button class="search-btn search_btn_toggle">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <a href="#" class="header-btn">
-                    <span class="btn-text">get started</span>
-                </a>
-              </div>
-
-              <!-- menu btn -->
-              <button class="rb-header-1-side-btn d-lg-none open_menu open_mobile_menu" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- action-->
+            <div class="rb-header-1-action">
+              <!-- side-btn -->
+              <button class="rb-header-1-side-btn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.1667 10.8151H0.833333C0.373332 10.8151 0 10.4418 0 9.98177C0 9.52177 0.373332 9.14844 0.833333 9.14844H19.1667C19.6267 9.14844 20 9.52177 20 9.98177C20 10.4418 19.6267 10.8151 19.1667 10.8151Z" fill="#838A95"/>
+                  <path d="M19.1667 4.42839H0.833333C0.373332 4.42839 0 4.05505 0 3.59505C0 3.13505 0.373332 2.76172 0.833333 2.76172H19.1667C19.6267 2.76172 20 3.13505 20 3.59505C20 4.05505 19.6267 4.42839 19.1667 4.42839Z" fill="#838A95"/>
+                  <path d="M19.1667 17.2057H0.833333C0.373332 17.2057 0 16.8324 0 16.3724C0 15.9124 0.373332 15.5391 0.833333 15.5391H19.1667C19.6267 15.5391 20 15.9124 20 16.3724C20 16.8324 19.6267 17.2057 19.1667 17.2057Z" fill="#838A95"/>
+                </svg>                  
               </button>
+              <!-- cart-btn -->
+               <a href="#" class="rb-header-1-cart-btn">
+                <span class="icon">
+                  <img src="assets/img/header/cart-1.svg" alt="">
+                </span>
+                <span class="cart-count">02</span>
+               </a>
+               <!-- search-btn -->
+                <button class="rb-header-1-search-btn">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.96974 4.0972C4.71015 3.83739 4.28898 3.83739 4.02938 4.0972C3.06554 5.06104 2.59181 6.40373 2.72948 7.78122C2.76383 8.12438 3.05292 8.38018 3.39052 8.38018C3.41271 8.38018 3.43507 8.37905 3.45725 8.37684C3.8228 8.34027 4.08946 8.01416 4.0529 7.64886C3.95492 6.66993 4.28922 5.71808 4.96974 5.03752C5.22955 4.77796 5.22955 4.35676 4.96974 4.0972Z" fill="#838A95"/>
+                    <path d="M7.60345 0C3.41089 0 0 3.41089 0 7.60345C0 11.796 3.41089 15.2069 7.60345 15.2069C11.796 15.2069 15.2069 11.796 15.2069 7.60345C15.2069 3.41089 11.796 0 7.60345 0ZM7.60345 13.8768C4.14422 13.8768 1.33007 11.0627 1.33007 7.60345C1.33007 4.14422 4.14422 1.33007 7.60345 1.33007C11.0625 1.33007 13.8768 4.14422 13.8768 7.60345C13.8768 11.0627 11.0627 13.8768 7.60345 13.8768Z" fill="#838A95"/>
+                    <path d="M17.8047 16.8633L12.9721 12.0308C12.7123 11.771 12.2916 11.771 12.0318 12.0308C11.772 12.2904 11.772 12.7116 12.0318 12.9711L16.8643 17.8037C16.9942 17.9336 17.1642 17.9985 17.3345 17.9985C17.5047 17.9985 17.6748 17.9336 17.8047 17.8037C18.0644 17.5441 18.0644 17.1229 17.8047 16.8633Z" fill="#838A95"/>
+                  </svg>                    
+                </button>
+            </div>
+
+            <!-- menu -->
+            <nav class="main-navigation">
+              <ul id="main-nav" class="nav navbar-nav clearfix">
+
+                <li class="dropdown">
+                    <a href="!#">home</a>
+                    <ul class="dropdown-menu clearfix">
+                      <li>
+                        <a href="index.html">home one</a>
+                      </li>
+                      <li>
+                          <a href="index-2.html">home two</a>
+                      </li>
+                      <li>
+                          <a href="index-3.html">home three</a>
+                      </li>
+                      <li>
+                          <a href="index-4.html">home four</a>
+                      </li>
+                      <li>
+                          <a href="index-5.html">home five</a>
+                      </li>
+                    </ul>
+                </li>
+                                            
+                <li>
+                    <a href="#">about</a>
+                </li>
+
+                <li>
+                    <a href="#">services</a>
+                </li>
+
+                <li>
+                    <a href="#">pages</a>
+                </li>
+                
+                <li>
+                    <a href="#">news</a>
+                </li>
+
+                <li>
+                    <a href="#">contact</a>
+                </li>
+
+
+              </ul>
+            </nav> 
+
+            <!-- btn -->
+            <a href="#" class="rb-header-1-btn">
+              <span class="btn-text">Get a free quote</span>
+            </a>
+
+            <!-- mobile device logo -->
+            <a href="#" class="rb-header-1-mob-logo">
+              <img src="assets/img/logo/logo-1.svg" alt="">
+            </a>
+
+            <!-- menu btn -->
+            <button class="rb-header-1-mob-btn open_menu open_mobile_menu" id="menuToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
 
           </div>
 
@@ -1171,6 +1184,7 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/marquee.min.js"></script>
     <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/nice-select.min.js"></script>
     <script src="assets/js/main.js"></script>
 
   </body>

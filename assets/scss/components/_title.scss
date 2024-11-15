@@ -26,7 +26,7 @@
     align-items: center;
     padding: 4px 16.5px;
     gap: 6px;
-    background: linear-gradient(90deg, #708BFD 0%, #FE71B9 100%);
+    background: var(--rb-gd-6);
     box-shadow: inset 0px -4px 18.5px rgba(255, 255, 255, 0.79);
     border-radius: 48px;
     margin-bottom: 20px;
@@ -49,7 +49,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    background: linear-gradient(102.44deg, #5163FF -0.32%, #FE71B9 100%);
+    background: var(--rb-gd-3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

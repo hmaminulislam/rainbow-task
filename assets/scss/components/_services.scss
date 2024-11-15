@@ -40,6 +40,15 @@
         @media #{$xs} {
             padding: 20px;
         }
+
+        .main-img {
+            border: 5px solid #FFFFFF;
+            border-radius: 10px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
     }
 
     &-btn-wrap {
@@ -86,7 +95,7 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 30px;
-                background: linear-gradient(102.44deg, #5163FF -0.32%, #FE71B9 100%);
+                background: var(--rb-gd-3);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
